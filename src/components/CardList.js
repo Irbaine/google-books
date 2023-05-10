@@ -12,7 +12,7 @@ const CardList = ({data}) => { // data or props both working // data is already 
 
         data.map((user, i) => {
         return (
-        <App 
+        <App
         key={i} 
         //id={data[i].id} 
         id= {data[i].id}
@@ -24,6 +24,7 @@ const CardList = ({data}) => { // data or props both working // data is already 
         email= {data[i].volumeInfo.publishedDate}
         pages= {data[i].volumeInfo.pageCount}
         language= {data[i].volumeInfo.language}
+        link= {data[i].volumeInfo.canonicalVolumeLink}
 
         />
 

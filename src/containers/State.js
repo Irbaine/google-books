@@ -1,5 +1,4 @@
 import React from 'react';
-//import { data } from './data';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox'; 
 import './State.css';
@@ -7,17 +6,16 @@ import Scroll from '../components/Scroll';
 import ErrorBoundry from '../components/ErrorBoundry'; 
 
 class State extends React.Component{
-    // does state works with class component only ?
     constructor(){
         super()
         this.state = {
-            data: [], // instead of hard coded data
+            data: [],
             inputfield: ''
         }
     }
 
     async getCategories() {
-        const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=total`);
+        const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=the&maxResults=40`);
         const data = await response.json();
         console.log(data.items);
         this.setState({ data : data.items });
@@ -25,10 +23,7 @@ class State extends React.Component{
 
    componentDidMount(){
 
-    //const userlink = 'https://jsonplaceholder.typicode.com/users';
-    const v1Books = 'https://www.googleapis.com/books/v1/volumes?q=total'; // replace ?q=search+terms with /id 
-
-    //fetch(userlink)
+    const v1Books = 'https://www.googleapis.com/books/v1/volumes?q=the&maxResults=40';
 
     this.getCategories();
 
@@ -36,17 +31,12 @@ class State extends React.Component{
         .then(response => response.json())
         //.then(response => console.log(JSON.stringify(response)))
         .then(books => this.setState({data: books.items}));
-        
-    
-
-}
+    }
 
 
-onSearchChange = (event) => { // add = () => to prevent event this to scope on other places // without that it will scope input in this case
-        this.setState({inputfield: event.target.value})
-
-    //console.log(filteredRobots);
-}
+    onSearchChange = (event) => { // add = () => to prevent event this to scope on other places // without that it will scope input in this case
+            this.setState({inputfield: event.target.value})
+    }
 
     render(){
         const { data, inputfield } = this.state;
