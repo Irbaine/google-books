@@ -45,7 +45,7 @@ export const MyComponent = (str) => {
 
 const App = ({email, id, name, pages, author, language, link}) =>{
   return (
-  <a href={link} target="_blank" class="link black">
+  <a href={link} target="_blank" rel="noopener noreferrer" class="link black">
     <div className="bg-light-gray tc dib br3 ma3 pa2 grow bw2 shodow-5" >
       <img alt='robots' src={`https://books.google.com/books/content?id=${id}&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE72y9i7dVgSRTjwICYMBmvE1zwJwYVPkarGCWJpaJgWVOspVpocueXAmwd9Z4LuV4A1wTNvLqX9dcqhWVt7gisZzzUYWO-dmsF9E_JiUqUMAMygaf7EiPF60_xU6rl0A_TjbQeci&source=gbs_api`}></img>
       <div>
@@ -62,6 +62,3 @@ export default App;
 
 
 // video 13 must be repeated
-
-// oreview 
-//https://books.google.com/books/content?id={id}&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE72y9i7dVgSRTjwICYMBmvE1zwJwYVPkarGCWJpaJgWVOspVpocueXAmwd9Z4LuV4A1wTNvLqX9dcqhWVt7gisZzzUYWO-dmsF9E_JiUqUMAMygaf7EiPF60_xU6rl0A_TjbQeci&source=gbs_api

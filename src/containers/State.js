@@ -4,6 +4,7 @@ import SearchBox from '../components/SearchBox';
 import './State.css';
 import Scroll from '../components/Scroll';
 import ErrorBoundry from '../components/ErrorBoundry'; 
+import {Tooltip} from '../components/Tooltip';
 
 class State extends React.Component{
     constructor(){
@@ -49,14 +50,17 @@ class State extends React.Component{
         return (!data.length) ?
             <h1> No Books </h1> :
             (
-            <div className='tc'>
-                <h1 className='f1'>Google Books</h1>
-                <SearchBox searchChange={this.onSearchChange}/> 
-                <Scroll>
-                    <ErrorBoundry>
-                        <CardList data={filteredRobots} />
-                    </ErrorBoundry> 
-                </Scroll>
+            <div className='tc mt0 pt0'>
+                <Tooltip text="Google Books is a service from Google Inc. 
+                That searches the full text of books and magazines that Google has scanned.">
+                <h1 className='f1 mb4'>Google Books</h1>
+                </Tooltip>
+                    <SearchBox searchChange={this.onSearchChange} /> 
+                    <Scroll>
+                        <ErrorBoundry>
+                            <CardList data={filteredRobots} />
+                        </ErrorBoundry> 
+                    </Scroll>
             </div>
         );
     }
