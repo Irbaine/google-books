@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useLayer, useHover, Arrow } from "react-laag";
-import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion'
+import {AnimatePresence, motion} from 'framer-motion'
  
 export function Tooltip({ children, text }) {
   // We use `useHover()` to determine whether we should show the tooltip.

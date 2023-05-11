@@ -6,10 +6,7 @@ import './index.css';
 import State from './containers/State';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
-//import { data } from './data'; // data is not exported as default  // that is why it should be distructured {}
 
-
-//ReactDOM.render( <State /> , document.getElementById('root'));
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

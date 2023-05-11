@@ -30,21 +30,19 @@ class State extends React.Component{
 
     fetch(v1Books)
         .then(response => response.json())
-        //.then(response => console.log(JSON.stringify(response)))
         .then(books => this.setState({data: books.items}));
     }
 
 
-    onSearchChange = (event) => { // add = () => to prevent event this to scope on other places // without that it will scope input in this case
-            this.setState({inputfield: event.target.value})
+    onSearchChange = (event) => { 
+        this.setState({inputfield: event.target.value})
     }
 
     render(){
         const { data, inputfield } = this.state;
         const filteredRobots = data.filter( singledata =>{
             return singledata.volumeInfo.title.toLowerCase().includes(inputfield.toLowerCase());
-            // the two lines above was in onSearchChange
-            //and <CardList data={this.state.data} /> to filteredRobots
+
         })
 
         return (!data.length) ?
@@ -66,7 +64,5 @@ class State extends React.Component{
     }
 }
 
-
-//watch the end of the vid 14 it explains everything
 
 export default State;
