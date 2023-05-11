@@ -1,17 +1,15 @@
 {
-  "main.css": "/google-books/static/css/main.cb82b457.chunk.css",
-  "main.js": "/google-books/static/js/main.7e6feb16.chunk.js",
-  "main.js.map": "/google-books/static/js/main.7e6feb16.chunk.js.map",
-  "runtime~main.js": "/google-books/static/js/runtime~main.d3fb5c4a.js",
-  "runtime~main.js.map": "/google-books/static/js/runtime~main.d3fb5c4a.js.map",
-  "static/css/2.51bbabfb.chunk.css": "/google-books/static/css/2.51bbabfb.chunk.css",
-  "static/js/2.253f5e7a.chunk.js": "/google-books/static/js/2.253f5e7a.chunk.js",
-  "static/js/2.253f5e7a.chunk.js.map": "/google-books/static/js/2.253f5e7a.chunk.js.map",
-  "static/js/3.4f83f070.chunk.js": "/google-books/static/js/3.4f83f070.chunk.js",
-  "static/js/3.4f83f070.chunk.js.map": "/google-books/static/js/3.4f83f070.chunk.js.map",
-  "index.html": "/google-books/index.html",
-  "precache-manifest.e5240a23ead2ee85fa9726837be44aca.js": "/google-books/precache-manifest.e5240a23ead2ee85fa9726837be44aca.js",
-  "service-worker.js": "/google-books/service-worker.js",
-  "static/css/2.51bbabfb.chunk.css.map": "/google-books/static/css/2.51bbabfb.chunk.css.map",
-  "static/css/main.cb82b457.chunk.css.map": "/google-books/static/css/main.cb82b457.chunk.css.map"
+  "files": {
+    "main.css": "/google-books/static/css/main.a87abb92.css",
+    "main.js": "/google-books/static/js/main.64295764.js",
+    "static/js/787.92ecbff7.chunk.js": "/google-books/static/js/787.92ecbff7.chunk.js",
+    "index.html": "/google-books/index.html",
+    "main.a87abb92.css.map": "/google-books/static/css/main.a87abb92.css.map",
+    "main.64295764.js.map": "/google-books/static/js/main.64295764.js.map",
+    "787.92ecbff7.chunk.js.map": "/google-books/static/js/787.92ecbff7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a87abb92.css",
+    "static/js/main.64295764.js"
+  ]
 }
